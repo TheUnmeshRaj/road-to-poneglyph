@@ -170,7 +170,7 @@ function animate() {
     }
   }
   connectParticles();
-  connectToMouse();  // ADD THIS LINE
+  connectToMouse();
   animationRef.current = requestAnimationFrame(animate);
 }
 
