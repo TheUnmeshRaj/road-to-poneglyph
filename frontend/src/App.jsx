@@ -111,7 +111,7 @@ function ParticleBackground() {
           if (d2 < distLimitSq) {
             if (config.connectStyle === "lines") {
               ctx.strokeStyle = config.lineColor;
-              ctx.lineWidth = 0.9;
+              ctx.lineWidth = 1.6 - d2 / distLimitSq;
               ctx.beginPath();
               ctx.moveTo(particles[a].x, particles[a].y);
               ctx.lineTo(particles[b].x, particles[b].y);
@@ -143,7 +143,7 @@ function connectToMouse() {
     const p = item.particle;
     ctx.save();
     ctx.strokeStyle = "#F8B301";
-    ctx.lineWidth = 1.;
+    ctx.lineWidth = 0.3;
     ctx.shadowColor = "#000";
     ctx.shadowBlur = 8;
     ctx.beginPath();
