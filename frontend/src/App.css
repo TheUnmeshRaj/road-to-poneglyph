@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap');
+
+@font-face {
+  font-family: 'OnePieceFont';
+  src: url('/fonts/onepiecefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Ensure the background works well across devices */
+.pokemon-bg {
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .pokemon-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Add subtle animation to make it more dynamic */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 1; }
+}
+
+.bg-animate {
+  animation: subtle-pulse 4s ease-in-out infinite;
+}
+
+.onepiece-title {
+  font-family: 'OnePieceFont', sans-serif;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.luffy-corner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 420px;       
+  height: auto;
+  z-index: 999;
+  pointer-events: none; 
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+::-webkit-scrollbar {
+  width: 32px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background: #facc15; 
+  border-radius: 16px;
+  border: 8px solid #23272f;
+  min-height: 48px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fde047; 
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 #23272f;
+}
+
+
+html {
+  background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
+}
+
+
+body {
+  font-family:  'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+.card-title,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+
+.card-body,
+p,
+span,
+li,
+.text-gray-200,
+.text-gray-300 {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+
+.team-card {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+.team-card .team-card-title {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+.team-card .team-card-role {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.team-card .team-card-desc {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.sparkle-btn {
+  position: relative;
+  overflow: visible;
+}
+.sparkle-container {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+}
+.sparkle {
+  position: absolute;
+  width: 18px; height: 18px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.2s, transform 0.4s;
+  pointer-events: none;
+}
+.sparkle-1 { top: -10px; left: 10%; }
+.sparkle-2 { top: 10px; right: -10px; }
+.sparkle-3 { bottom: -10px; left: 30%; }
+/* Add more .sparkle-N with different positions */
+
+.sparkle-btn:hover .sparkle {
+  opacity: 1;
+  transform: scale(1.3) rotate(15deg);
+  animation: sparkle-pop 0.7s linear;
+}
+@keyframes sparkle-pop {
+  0% { opacity: 0; transform: scale(0.5);}
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.3);}
+}
+
+.sparkle-img {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes sparkle-fly-btn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(0, 0) rotate(var(--rotate, 0deg));
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(var(--scale, 1)) translate(var(--xmove, 0px), var(--ymove, 0px)) rotate(var(--rotate, 0deg));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(var(--scale, 1.2)) translate(var(--xmove, 0px), var(--ymove, 0px)) rotate(var(--rotate, 0deg));
+  }
+}
+
+footer {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+footer h3, footer p {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+footer .SparkleButton, footer button, footer a {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+
+section.schedule-section, .schedule-section h2, .schedule-section h3, .schedule-section p {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+.schedule-section h2 {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+  font-weight: 800;
+}
+
+/* Event Details section styling */
+section.event-details-section, .event-details-section h2, .event-details-section h3, .event-details-section p {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
+}
+.event-details-section h2 {
+  font-family: 'Special Gothic Expanded One', 'Nunito', Arial, Helvetica, sans-serif !important;
+  font-weight: 800;
+}
+
+.onepiece-title.shine {
+  font-size: 2.5rem; 
+  font-family: 'OnePieceFont', sans-serif;
+  font-weight: bold;
+  color: #3e4c94; 
+  -webkit-text-fill-color: #F8B301; 
+  text-shadow: 6px 6px 0px #D80000; 
+  background: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%) 0 0 no-repeat;
+  -webkit-background-size: 200px;
+  background-size: 200px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 5s infinite linear;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+@media (min-width: 480px) {
+  .onepiece-title.shine {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 640px) {
+  .onepiece-title.shine {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .onepiece-title.shine {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .onepiece-title.shine {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .onepiece-title.shine {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-width: 3px;
+    min-height: 32px;
+  }
+  .onepiece-title.shine {
+    font-size: 2.9rem;
+    -webkit-text-stroke: 1px #3b82f6;
+  }
+}
+@keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+/* Uiverse.io Download Button Styles */
+.uiverse-download-btn.button {
+  padding: 12px 19px;
+  border: none;
+  color: rgb(16, 52, 170);
+  cursor: pointer;
+  background-color: rgb(190, 219, 253);
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.5s;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 13px;
+  box-shadow: rgba(150, 143, 143, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  z-index: 10;
+}
+.uiverse-download-btn.button:hover {
+  background-color: rgb(164, 206, 253);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.saveicon {
+  width: 17px;
+}
+.uiverse-dropdown-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #facc15;
+  color: #23272f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(150,143,143,0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-bottom: 2px;
+  text-align: left;
+}
+.uiverse-dropdown-btn:hover {
+  background: #fde047;
+  color: #1e293b;
+  transform: translateX(4px) scale(1.04);
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+}
+@media (max-width: 640px) {
+  .logo-img {
+    height: 40px;
+  }
+  .onepiece-title.shine {
+    font-size: 2.9rem;
+    -webkit-text-stroke: 1px #3b82f6;
+  }
+}
