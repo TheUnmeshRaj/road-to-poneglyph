@@ -276,7 +276,7 @@ const LandingPage = () => {
    };
 
    const openRegistrationForm = () => {
-      const googleFormUrl = "https://forms.gle/qSmHvwfipLBPnJtf8"; // Placeholder URL
+      const googleFormUrl = "https://roadtoponeglyph.rvcesip2025.org/"; 
       window.open(googleFormUrl, '_blank');
    };
 
@@ -317,7 +317,7 @@ const LandingPage = () => {
                         className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg sm:text-xl rounded-full shadow-2xl transition duration-300 transform hover:scale-105"
                         onClick={openRegistrationForm}
                      >
-                        Register Now 
+                        Sail to the Voyage!
                      </SparkleButton>
                   </div>
                </div>
@@ -346,43 +346,56 @@ A               </div>
                </div>
             </section>
          </FadeInSection>
-
-         
          <FadeInSection>
-            {/* Event Details Section */}
-            <section className="mx-auto px-6 py-16 max-w-6xl event-details-section">
-               <div className="bg-gradient-to-br from-white/5 via-white/10 to-white/0 rounded-3xl shadow-2xl p-8 border border-white/10 backdrop-blur">
-                  <h2 className="card-title text-5xl font-bold mb-12 text-yellow-300 drop-shadow-lg text-center" style={{ fontFamily: 'Special Gothic Expanded One, Nunito, Arial, Helvetica, sans-serif', fontWeight: 800 }}>
-                     Crew Info
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                     <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
-                        <div className="text-6xl mb-4">👥</div>
-                        <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Crew Structure</h3>
-                        <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-                           3 to 4 members per crew<br/>
-                           Solo pirates not allowed
-                        </p>
-                     </div>
-                     <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
-                        <div className="text-6xl mb-4">🎓</div>
-                        <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Open To</h3>
-                        <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-                           All first and second-year students of RVCE & THWS
-                        </p>
-                     </div>
-                     <div className="bg-white/5 rounded-2xl shadow-xl p-8 text-center transform hover:scale-105 transition duration-300 border border-white/10 card-body" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', backdropFilter: 'blur(3px)' }}>
-                        <div className="text-6xl mb-4">🗓️</div>
-                        <h3 className="card-title text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Deadline to Register</h3>
-                        <p className="card-body text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>
-                           24th Oct 2025<br/>
-                           <span className="text-base text-gray-300">Free of cost</span>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </FadeInSection>
+  <section className="mx-auto max-w-6xl px-6 py-20">
+    <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-[#1a1a1a]/70 via-[#2a2a2a]/60 to-transparent p-10 shadow-[0_0_40px_rgba(255,215,0,0.15)] backdrop-blur-md">
+      <h2
+        className="mb-14 text-center text-5xl font-extrabold tracking-wide text-yellow-300"
+        style={{ fontFamily: 'Special Gothic Expanded One, Nunito, sans-serif' }}
+      >
+        Crew Info
+      </h2>
+
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        {/* Crew Structure */}
+        <div className="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 text-center shadow-xl transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,215,0,0.2)]">
+          <div className="mb-5 text-6xl group-hover:animate-pulse">👥</div>
+          <h3 className="mb-4 text-2xl font-bold text-white">Crew Structure</h3>
+          <p className="text-lg text-gray-200">
+            Up to <span className="text-yellow-300 font-semibold">3 members</span> per crew
+            <br />
+            <span className="text-red-300/80 italic">Solo pirates not allowed</span>
+          </p>
+        </div>
+
+        {/* Open To */}
+        <div className="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 text-center shadow-xl transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,215,0,0.2)]">
+          <div className="mb-5 text-6xl group-hover:animate-bounce">🎓</div>
+          <h3 className="mb-4 text-2xl font-bold text-white">Open To</h3>
+          <p className="text-lg text-gray-200">
+            All <span className="text-yellow-300 font-semibold">1st & 2nd-year</span> students
+            <br />
+            <span className="px-3 py-1 mt-2 inline-block rounded-full bg-yellow-300/20 text-yellow-200 text-sm font-semibold border border-yellow-300/40">
+              RVCE & THWS
+            </span>
+          </p>
+        </div>
+
+        {/* Deadline */}
+        <div className="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 text-center shadow-xl transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,215,0,0.2)]">
+          <div className="mb-5 text-6xl group-hover:rotate-6 transition-transform duration-300">🗓️</div>
+          <h3 className="mb-4 text-2xl font-bold text-white">Deadline to Register</h3>
+          <p className="text-lg text-gray-200">
+            <span className="block text-yellow-300 font-semibold text-xl">Not Required for Demo Event</span>
+            <span className="mt-2 inline-block rounded-full bg-green-500/20 px-3 py-1 text-sm text-green-300 border border-green-400/30">
+              Enjoy!
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</FadeInSection>
 
          <FadeInSection>
             {/* Modern Schedule Card Section - Remade */}
@@ -476,6 +489,60 @@ _
                </div>
             </section>
          </FadeInSection>
+         <FadeInSection>
+  <section className="mx-auto max-w-6xl px-6 py-20 relative z-10">
+    <div className="relative rounded-[2rem] border-4 border-yellow-400/40 bg-gradient-to-br from-[#2a1b00]/90 via-[#1b1200]/80 to-[#000000]/90 p-10 shadow-[0_0_50px_rgba(255,215,0,0.25)] backdrop-blur-md overflow-hidden">
+      
+      {/* 🔥 Decorative border & texture — now click-safe */}
+      <div className="absolute inset-0 pointer-events-none z-[1]">
+        <div className="absolute inset-0 border-[6px] border-[rgba(255,215,0,0.25)] rounded-[2rem] [mask-image:radial-gradient(ellipse_at_center,white,transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-[url('/images/old-map-texture.png')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+      </div>
+
+      <h2
+        className="relative z-[2] mb-14 text-center text-5xl font-extrabold text-yellow-300 tracking-wide"
+        style={{ fontFamily: 'Special Gothic Expanded One, Nunito, sans-serif' }}
+      >
+        CTF Rules & Guide
+      </h2>
+
+      <div className="relative z-[2] grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* 🎥 YouTube Embed — clickable */}
+        <div className="relative aspect-video overflow-hidden rounded-2xl border border-yellow-300/30 shadow-lg hover:shadow-[0_0_30px_rgba(255,215,0,0.25)] transition duration-300">
+          <iframe
+            className="absolute inset-0 w-full h-full rounded-2xl"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=LYveQmOBGIuofcHp"
+            title="CTF Event Guide"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ pointerEvents: 'auto', zIndex: 5 }}
+          ></iframe>
+        </div>
+
+        {/* 📜 Rules */}
+        <div className="bg-white/5 rounded-2xl border border-white/10 p-8 text-gray-100 shadow-xl">
+          <h3 className="mb-5 text-3xl font-bold text-yellow-300 drop-shadow-md">
+            🧭 How to Play
+          </h3>
+          <ul className="list-disc pl-6 space-y-3 text-lg text-gray-200">
+            <li>Form your crew (max 3 members).</li>
+            <li>Register not required for <span className="text-yellow-300 font-semibold">demo event</span>.</li>
+            <li>Challenges test your logic, speed, and teamwork.</li>
+            <li>Each solved challenge reveals the next island (stage).</li>
+            <li>Hints cost bounty points — use wisely.</li>
+            <li>Top crews unlock the <span className="italic">final treasure challenge</span>.</li>
+          </ul>
+
+          <div className="mt-8">
+            <span className="inline-block rounded-full bg-yellow-300/20 px-4 py-2 text-yellow-200 font-semibold text-sm border border-yellow-300/40">
+              Follow the map, find the flag, claim the treasure.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</FadeInSection>
 
 
 
@@ -490,7 +557,7 @@ _
                			className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
                			onClick={openRegistrationForm}
                		>
-   	            		Register Now
+   	            		Sail to the Voyage!
             		</SparkleButton>
             	</div>
       		</div>
