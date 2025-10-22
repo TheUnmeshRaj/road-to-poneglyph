@@ -8,7 +8,6 @@ import CCLogo from './assets/CClogo.png';
 import thwsLogo from './assets/thws_logo.png';
 import luffy from './assets/luffy.png';
 
-// Translations object
 const translations = {
   en: {
     title: "Road to Poneglyph",
@@ -32,7 +31,7 @@ const translations = {
     enjoy: "Enjoy!",
     schedule: "Voyage Schedule",
     trialVoyage: "Trial Voyage (Online)",
-    trialDate: "Oct 25th, 8:00 PM IST / 4:30 PM CEST",
+    trialDate: "Oct 28th, 6:45 PM IST / 3:15 PM CEST",
     finalVoyage: "Final Voyage (Online)",
     finalDate: "Last Week of November",
     facultyAdvisors: "Faculty Advisors",
@@ -80,7 +79,7 @@ const translations = {
     enjoy: "Viel Spaß!",
     schedule: "Reiseplan",
     trialVoyage: "Probefahrt (Online)",
-    trialDate: "25. Okt, 20:00 Uhr IST / 16:30 Uhr MESZ",
+    trialDate: "28. Okt, 18:45 Uhr IST / 15:15 Uhr MESZ",
     finalVoyage: "Finale Reise (Online)",
     finalDate: "Letzte Novemberwoche",
     facultyAdvisors: "Fakultätsberater",
