@@ -18,7 +18,7 @@ const translations = {
     eventOverview: "Event Overview",
     eventOverviewText: "Road to Poneglyph is a gamified CTF and problem-solving event with a One Piece theme. Solve challenges, decipher Poneglyphs, and unlock clues to the final text!",
     whatExpect: "What You Can Expect",
-    whatExpectText: "You will face technical challenges in web security, AI/ML, blockchain, data science, and more. Earn bounties for each problem solved, discover One Piece-themed clues to the final Poneglyph, receive custom participation certificates, and enjoy recognition, learning, and networking opportunities.",
+    whatExpectText: "You will face technical challenges in web security, AI/ML, data science, and more. Earn bounties for each problem solved, discover One Piece-themed clues to the final Poneglyph, receive custom participation certificates, and enjoy recognition, learning, and networking opportunities.",
     perks: "Perks for Participants",
     perksText: "All participants will receive a One Piece-themed certificate, have a chance to be shortlisted for finals based on performance, gain peer engagement and recognition, and experience a blend of fun and technical learning.",
     crewInfo: "Crew Info",
@@ -66,7 +66,7 @@ const translations = {
     eventOverview: "Veranstaltungsübersicht",
     eventOverviewText: "Road to Poneglyph ist ein gamifiziertes CTF- und Problemlösungs-Event mit einem One Piece-Thema. Löse Herausforderungen, entziffere Poneglyphen und entdecke Hinweise auf den finalen Text!",
     whatExpect: "Was Sie erwartet",
-    whatExpectText: "Sie werden sich technischen Herausforderungen in den Bereichen Websicherheit, KI/ML, Blockchain, Data Science und mehr stellen. Verdienen Sie Belohnungen für jedes gelöste Problem, entdecken Sie One Piece-thematische Hinweise auf das finale Poneglyph, erhalten Sie individuelle Teilnahmezertifikate und genießen Sie Anerkennung, Lernen und Networking-Möglichkeiten.",
+    whatExpectText: "Sie werden sich technischen Herausforderungen in den Bereichen Websicherheit, KI/ML, Data Science und mehr stellen. Verdienen Sie Belohnungen für jedes gelöste Problem, entdecken Sie One Piece-thematische Hinweise auf das finale Poneglyph, erhalten Sie individuelle Teilnahmezertifikate und genießen Sie Anerkennung, Lernen und Networking-Möglichkeiten.",
     perks: "Vorteile für Teilnehmer",
     perksText: "Alle Teilnehmer erhalten ein One Piece-Zertifikat, haben die Chance, basierend auf ihrer Leistung für das Finale ausgewählt zu werden, erhalten Peer-Engagement und Anerkennung und erleben eine Mischung aus Spaß und technischem Lernen.",
     crewInfo: "Crew-Info",
@@ -369,15 +369,6 @@ function LanguageToggle({ language, setLanguage }) {
 const LandingPage = () => {
   const [language, setLanguage] = useState('en');
   const t = translations[language];
-
-  const downloadPDF = (pdfUrl, filename) => {
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   const openRegistrationForm = () => {
     window.location.href ="https://roadtoponeglyph.rvcesip2025.org";

@@ -108,9 +108,9 @@
 ::-webkit-scrollbar-thumb:hover { background: #fde047; }
 
 html {
-  scrollbar-width: thin;
+  scrollbar-width:thin;
   scrollbar-color: #facc15 #23272f;
-  background: url('/assets/backg.jpg') center center/cover no-repeat fixed;
+  background: url('/assets/OnePieceMap.png') center center/cover no-repeat fixed;
 }
 
 body {
