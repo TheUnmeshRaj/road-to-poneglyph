@@ -380,8 +380,7 @@ const LandingPage = () => {
   };
 
   const openRegistrationForm = () => {
-    const googleFormUrl = "https://roadtoponeglyph.rvcesip2025.org/"; 
-    window.open(googleFormUrl, '_blank');
+    window.location.href ="https://roadtoponeglyph.rvcesip2025.org";
   };
 
   return (
