@@ -370,7 +370,7 @@ const LandingPage = () => {
   const t = translations[language];
 
   const openRegistrationForm = () => {
-    window.location.href ="https://roadtoponeglyph.rvcesip2025.org";
+    window.location.href ="https://rvctf.codingclubrvce.com/";
   };
 
   return (
