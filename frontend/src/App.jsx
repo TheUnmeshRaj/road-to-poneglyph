@@ -6,6 +6,7 @@ import './App.css'
 import RVCELogo from './assets/RVCE_Logo.png';
 import CCLogo from './assets/CClogo.png';
 import thwsLogo from './assets/thws_logo.png';
+import Acc from './assets/acc.png';
 import luffy from './assets/luffy.png';
 
 const translations = {
@@ -38,7 +39,7 @@ const translations = {
     advisor1Role: "Associate Professor & Associate Dean-PG Studies, ISE\nFaculty Advisor for the Coding Club",
     advisor2Role: "Dean Student Affairs\nFaculty Advisor for the Coding Club",
     advisor3Role: "Professor at the University of Applied Sciences Würzburg-Schweinfurt",
-    advisor4Role: "Professor, \nDepartment of Computer Sciecne and Engineering",
+    advisor4Role: "Professor, \nDepartment of CSE\nFaculty Advisor for the Accelerate Club",
     ctfRules: "CTF Rules & Guide",
     howToPlay: "🧭 How to Play",
     rule1: "Form your crew (max 3 members).",
@@ -86,7 +87,7 @@ const translations = {
     advisor1Role: "Außerordentlicher Professor & Associate Dean-PG Studies, ISE\nFakultätsberater für den Coding Club",
     advisor2Role: "Dekan Studentenangelegenheiten\nFakultätsberater für den Coding Club",
     advisor3Role: "Professor bei Hochschule für angewandte Wissenschaften Würzburg-Schweinfurt",
-    advisor4Role: "Professor, \nFakultät für Informatik und Ingenieurwesen",
+    advisor4Role: "Professor, \nAbteilung für CSE\nFakultätsberater für den Accelerate Club",
     ctfRules: "CTF-Regeln & Leitfaden",
     howToPlay: "🧭 Wie man spielt",
     rule1: "Bilden Sie Ihre Crew (max. 3 Mitglieder).",
@@ -394,6 +395,7 @@ const LandingPage = () => {
           <div className="flex flex-row items-center justify-center gap-6 mb-6">
             <img src={RVCELogo} alt="RVCE Logo" className="logo-img" />
             <img src={CCLogo} alt="CC Logo" className="logo-img" />
+            <img src={Acc} alt="ACC Logo" className="logo-img" />
             <img src={thwsLogo} alt="THWS Logo" className="logo-img" />
           </div>
           <div className="absolute inset-0 "></div>
