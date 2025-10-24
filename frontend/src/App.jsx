@@ -38,7 +38,7 @@ const translations = {
     advisor1Role: "Associate Professor & Associate Dean-PG Studies, ISE\nFaculty Advisor for the Coding Club",
     advisor2Role: "Dean Student Affairs\nFaculty Advisor for the Coding Club",
     advisor3Role: "Professor at the University of Applied Sciences Würzburg-Schweinfurt",
-    advisor4Role: "Associate Professor & CSE\nFaculty Advisor for the Accelerate Club",
+    advisor4Role: "Professor, \nDepartment of Computer Sciecne and Engineering",
     ctfRules: "CTF Rules & Guide",
     howToPlay: "🧭 How to Play",
     rule1: "Form your crew (max 3 members).",
