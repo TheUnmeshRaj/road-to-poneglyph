@@ -8,6 +8,7 @@ import CCLogo from './assets/CClogo.png';
 import thwsLogo from './assets/thws_logo.png';
 import Acc from './assets/acc.png';
 import luffy from './assets/luffy.png';
+import discord from './assets/discord.png';
 
 const translations = {
   en: {
@@ -620,23 +621,39 @@ const LandingPage = () => {
 
 
 
-   	<FadeInSection>
-   		{/* Footer */}
-      	<footer className=" backdrop-blur-sm text-white py-12 mt-16 relative z-10">
-      		<div className="mx-auto px-6 text-center">
-      			<h3 className="text-3xl font-bold mb-4">{t.footerTitle}</h3>
-      			<p className="text-xl mb-8">{t.footerText}</p>
-      			<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            		<SparkleButton
-               			className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-               			onClick={openRegistrationForm}
-               		>
-   	            		{t.sailButton}
-            		</SparkleButton>
-            	</div>
-      		</div>
-      	</footer>
-   	</FadeInSection>
+<FadeInSection>
+  {/* Footer */}
+  <footer className="backdrop-blur-sm text-white py-12 mt-16 relative z-10">
+    <div className="mx-auto px-6 text-center">
+      <h3 className="text-3xl font-bold mb-4">{t.footerTitle}</h3>
+      <p className="text-xl mb-8">{t.footerText}</p>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+        <SparkleButton
+          className="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          onClick={openRegistrationForm}
+        >
+          {t.sailButton}
+        </SparkleButton>
+
+       <a
+  href="https://discord.gg/{invite_code}"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+>
+  <img
+    src={discord}
+    alt="Discord"
+    className="w-7 h-7"
+  />
+  Join our Discord!
+</a>
+
+      </div>
+    </div>
+  </footer>
+</FadeInSection>
+
       <img src={luffy} alt="Luffy" className="luffy-corner" />
    </div>
    );
