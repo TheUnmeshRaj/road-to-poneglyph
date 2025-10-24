@@ -86,7 +86,7 @@ const translations = {
     advisor1Role: "Außerordentlicher Professor & Associate Dean-PG Studies, ISE\nFakultätsberater für den Coding Club",
     advisor2Role: "Dekan Studentenangelegenheiten\nFakultätsberater für den Coding Club",
     advisor3Role: "Professor bei Hochschule für angewandte Wissenschaften Würzburg-Schweinfurt",
-    advisor4Role: "Professor, \nDepartment of Computer Science and Engineering",
+    advisor4Role: "Professor, \nFakultät für Informatik und Ingenieurwesen",
     ctfRules: "CTF-Regeln & Leitfaden",
     howToPlay: "🧭 Wie man spielt",
     rule1: "Bilden Sie Ihre Crew (max. 3 Mitglieder).",
