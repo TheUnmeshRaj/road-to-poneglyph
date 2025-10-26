@@ -636,7 +636,7 @@ const LandingPage = () => {
         </SparkleButton>
 
        <a
-  href="https://discord.gg/{invite_code}"
+  href="https://discord.gg/QafZUmfCuY"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-2 px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xl rounded-full shadow-lg transition duration-300 transform hover:scale-105"
