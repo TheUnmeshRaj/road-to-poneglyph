@@ -585,7 +585,7 @@ const LandingPage = () => {
         <div className="relative aspect-video overflow-hidden rounded-2xl border border-yellow-300/30 shadow-lg hover:shadow-[0_0_30px_rgba(255,215,0,0.25)] transition duration-300">
           <iframe
             className="absolute inset-0 w-full h-full rounded-2xl"
-            src="https://www.youtube.com/embed/{}"
+            src="https://www.youtube.com/embed/25QYYos5qb0?si=RmCIq-7TzkZmbsKY"
             title="CTF Event Guide"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
